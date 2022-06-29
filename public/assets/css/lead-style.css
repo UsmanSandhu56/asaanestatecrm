@@ -1,0 +1,383 @@
+/*------------------------------------------------------------------
+Template Name: Medila
+Version: 1.0
+Author: Divine-Store
+Author URL : https://themeforest.net/user/divine-store
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+	* GLOBAL STYLES
+	* COMMON STYLES 
+	* HEADER STYLES 
+	* ICON BOX / SERVICES STYLES 
+	* INFO STYLES 
+	* TESTIMONIAL STYLES 
+	* ABOUT   
+	* VIDEO BOX 
+	* FEATURES 
+	* GOOGLE MAP 
+	* CONTACT 
+	* MAILCHIMP 
+	* ELEMENTS 
+	* FOOTER 
+	* RESPONSIVE STYLES 
+
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+
+/* GLOBAL STYLES */
+
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	color: #555;
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #000000;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 700;
+	margin: 0;
+	letter-spacing: -0.5px;
+}
+
+p {
+	font-size: 14px;
+	color: #555;
+	line-height: 28px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: #54b862;
+}
+
+a, a:hover, a:focus, button, button:hover {
+	outline: 0;
+	text-decoration: none;
+	transition: .4s;
+}
+
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fa, .far, .fas{
+	font-family: "Font Awesome 5 Free" !important;
+}
+
+.form-control::placeholder {
+  color: #efefef;
+}
+
+.body {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+/*  HEADER STYLES */
+
+.navbar-fixed-top {
+	position: absolute;
+	right: 0;
+	left: 0;
+	font-family: 'Roboto Slab', sans-serif;
+	border-width: 0;
+	border-radius: 0;
+	background: transparent;
+	border-top: 5px solid #54b862;
+	z-index: 11;
+}
+
+.navbar-inverse {
+	transition: .4s;
+}
+
+.navbar {
+	min-height: 86px;
+	margin-bottom: 0;
+	border: none;
+}
+
+.navbar-lg .navbar-brand {
+	padding: 20px 0px 0;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 3px;
+	line-height: initial;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+
+/*  INTRO STYLES */
+
+.intro {
+	position: relative;
+}
+
+.intro .container,
+.intro img {
+	position: relative;
+	z-index: 77;
+}
+
+.overlay {
+	background: #151515;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding: 170px 0px 100px;
+}
+
+/*  Intro */
+
+.intro1 {
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+	padding: 170px 0px 100px;
+	background-color: #000000;
+	background-repeat: no-repeat;
+}
+
+.intro1 h2 {
+	color: #fff;
+	font-size: 53px;
+	text-transform: none;
+	font-weight: 700;
+	margin: 0 0 15px;
+}
+
+.intro1 p {
+	font-size: 16px;
+	color: #fff;
+}
+
+.intro-form {
+	padding: 40px 40px 60px;
+	border-radius: 10px;
+	background: rgba(84, 184, 98, 0.85);
+	webkit-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
+	-moz-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
+	box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
+}
+
+.intro-form h4 {
+	color: #fff;
+	font-size: 36px;
+	margin: 5px 0 20px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.intro-form input {
+	display: block;
+	width: 100%;
+	margin: 0;
+	-webkit-appearance: none;
+	font-size: 15px;
+	padding: 0px 15px;
+	height: 48px;
+	line-height: 48px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin-bottom: 18px;
+}
+
+.intro-form textarea{
+	display: block;
+	width: 100%;
+	margin: 0;
+	-webkit-appearance: none;
+	font-size: 15px;
+	padding: 5px 15px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin-bottom: 18px;
+}
+
+.features-list {
+	margin-top: 10px;
+}
+
+.features-list li {
+	width: 25%;
+	float: left;
+	color: #54b862;
+	text-align: center;
+}
+
+.features-list li i {
+	width: 80px;
+	height: 80px;
+	display: table;
+	line-height: 78px;
+	border-radius: 0px 15px 0px 15px;
+	font-size: 36px;
+	background: #fff;
+}
+
+.features-list li h5 {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	text-align: left;
+	margin-top: 15px;
+}
+
+
+.btn {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform:capitalize;
+	padding: 11px 28px;
+	border: none;
+	border-radius: 70px;
+	font-family: Roboto Slab;
+}
+
+
+.btn.btn-light{
+	color: #54b862 !important;
+    background: #fff !important;
+	border-radius: 5px;
+}
+
+
+.btn.btn-light:hover{
+	box-shadow: 0 8px 25px -8px #fff;
+}
+
+.btn.btn-lg {
+	font-size: 14px;
+}
+
+
+
+input:focus, textarea:focus {
+	box-shadow: none;
+	outline: 0;
+}
+
+@media(max-width: 1440px){
+	.intro1{
+		height: 100%;
+	}
+}
+
+@media(max-width: 991px){
+	.features-list li{
+		width: 50%;
+	}
+}
+
+@media (max-width: 767px) {
+	.features-list li {
+    	width: 35%;
+    	padding-bottom: 15px;
+	}
+	.order-1{
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 425px) {
+	.main-logo{
+		width: 90%;
+	}
+	.features-list li {
+    	width: 50%;
+	}
+	.features-list li i{
+		margin: auto;
+	}
+	.features-list li h5{
+		text-align: center;
+	}
+	.intro1 h2, .intro1 p, .navbar-header{
+		text-align: center;
+	}
+	.intro-form h4{
+		font-size: 28px;
+	}
+	.intro-form {
+    	padding: 30px 30px 50px;
+	}
+}
+/* RESPONSIVE STYLES */
+
+@media (min-width: 1440px){
+	.container {
+	    max-width: 1366px;
+	}
+}
+
+@media only screen and (min-width: 768px)  and (max-width: 992px) {
+
+	.container {
+		width: 100%;
+		max-width: 750px;
+	}
+	.intro-form {
+		padding: 30px 30px 40px;
+	}
+
+	.intro1 h2 {
+		font-size: 42px;
+	}
+}
+
+@media only screen and (min-width: 280px)  and (max-width: 767px) {
+
+	.intro1 {
+		padding: 120px 0 90px;
+	}
+
+	.intro1 h2 {
+		font-size: 34px;
+	}
+	.navbar-login {
+		display: none;
+	}
+	.navbar-lg .navbar-brand {
+		font-size: 22px;
+	}
+}
